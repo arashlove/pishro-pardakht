@@ -1,0 +1,39 @@
+.Landing {
+  .Home {
+    > div {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    .MainSection {
+      .h1 {
+        line-height: 150%;
+        word-spacing: 5px;
+      }
+      .download-box {
+        justify-content: space-between;
+        height: 40px;
+        img {
+          height: 100%;
+          max-width: 100px;
+          cursor: pointer;
+        }
+      }
+      .auth-alert {
+        background-color: #efefefbf;
+        width: 300px;
+        bottom: 0;
+        left: 0;
+        .time {
+          top: 10px;
+          left: 10px;
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .Service {
+      .Card {
+        height: 235px;
+      }
+    }
+  }
+}

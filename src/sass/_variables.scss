@@ -1,0 +1,24 @@
+$white: white;
+$dark: #364251;
+$light: #f1f2f1;
+$secondary: #818181;
+$light-gray: #f1f1f1;
+$primary: #f0b31d;
+$violet: #a82070;
+$light-yellow: #f8da92;
+
+$btn-violet-hover: rgb(131, 23, 86);
+$btn-violet-shadow: 0 0 0 0.25rem #a8207040;
+
+$gradient-left-to-right: linear-gradient(to right, #e09230, #f0b31d);
+
+$custom-colors: (
+  "white": $white,
+  "primary": $primary,
+  "dark": $dark,
+  "light": $light,
+  "violet": $violet,
+  "light-yellow": $light-yellow,
+  "secondary": $secondary,
+  "light-gray": $light-gray,
+);
