@@ -21,7 +21,7 @@ const navItem = [
   },
   {
     label: "تماس با ما",
-    items: [],
+    to: "/contact-us",
   },
 ];
 export default navItem;

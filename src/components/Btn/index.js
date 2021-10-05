@@ -1,11 +1,10 @@
 import { Button } from "react-bootstrap";
+import { Text } from "..";
 import "./index.scss";
 export default function Btn({
   variant = "primary",
   outline = false,
   label = "",
-  iconRight = null,
-  iconLeft = null,
   onClick = () => {},
   onMouseEnter = () => {},
   onMouseLeave = () => {},
@@ -14,7 +13,7 @@ export default function Btn({
   size = "md",
   type = "button",
   //   loading = false,
-  //   children = null,
+  children = null,
 }) {
   const showVariant = () => {
     if (outline) {
@@ -33,9 +32,8 @@ export default function Btn({
       className={`Btn ${className}`}
       type={type}
     >
-      {iconRight && <i className={`fs-6 mx-1 bi bi-${iconRight}`} />}
-      {label}
-      {iconLeft && <i className={`fs-6 mx-1 bi bi-${iconLeft}`} />}
+      <Text value={label} />
+      {children}
     </Button>
   );
 }

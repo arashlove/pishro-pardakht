@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "estedad-fa";
+  src: url(../assets/fonts/FD/Estedad-FD-Regular.ttf);
+}
+@font-face {
+  font-family: "estedad-en";
+  src: url(../assets/fonts/Estedad-Regular.ttf);
+}
+html {
+  font-size: 14px;
+}
+html,
+body,
+input,
+textarea,
+button,
+a {
+  font-family: "estedad-fa";
+}

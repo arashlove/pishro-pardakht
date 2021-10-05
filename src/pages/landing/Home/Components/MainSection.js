@@ -4,6 +4,7 @@ import downloadAndroidImage from "../../../../assets/images/download android.svg
 import downloadAppStoreImage from "../../../../assets/images/download app store.svg";
 import downloadGooglePlayImage from "../../../../assets/images/download google play.svg";
 import mobileImage from "../../../../assets/images/mobile.png";
+import arrowTopIcon from "../../../../assets/icons/arrow top.png";
 import logo from "../../../../assets/logos/logo.svg";
 
 export default function MainSection() {
@@ -21,7 +22,7 @@ export default function MainSection() {
               <img src={downloadAndroidImage} alt="دانلود مستقیم" />
             </div>
             <button className="all-none h4 d-flex flex-column flex-center text-secondary w-fit mx-auto mt-3">
-              <i className="bi bi-arrow-up" />
+              <img width='40' src={arrowTopIcon} alt='arrowTopIcon'/>
               <span>
                 <Text value="landing.home.main-section.download-btn" />
               </span>
@@ -30,7 +31,12 @@ export default function MainSection() {
         </Col>
         <Col xs="12" lg="6" className="d-flex flex-center">
           <div className="position-relative w-100">
-            <img src={mobileImage} alt="عکس موبایل" />
+            <img
+              className="mw-100"
+              width="450"
+              src={mobileImage}
+              alt="عکس موبایل"
+            />
             <div className="auth-alert position-absolute px-3 py-2 rounded-5 backdrop-blur w-100 w-lg-auto">
               <div className="logo d-flex align-items-center mb-2">
                 <img

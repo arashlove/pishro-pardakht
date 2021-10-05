@@ -1,0 +1,43 @@
+$white: white;
+$blue: #657fe4;
+$dark-blue: #012766;
+$dark: #364251;
+$light: #f1f2f1;
+$secondary: #818181;
+$gray: #c8ccde;
+$light-gray: #ebeff4;
+$violet: #a82070;
+$primary: #f0b31d;
+$info: #00beff;
+// $light-primary: #f8db93;
+$light-yellow: #f8da92;
+
+$btn-violet-hover: #831756;
+$btn-violet-shadow: 0 0 0 0.25rem #a8207040;
+
+$gradient-left-to-right: linear-gradient(to right, #e09230, $primary);
+$gradient-top-to-bottom: linear-gradient(to top, #e09230, $primary);
+
+$colors: (
+  "gray": $gray,
+  "light-gray": $light-gray,
+  "dark-blue": $dark-blue,
+);
+$custom-colors: map-merge(
+  (
+    "none": transparent,
+    "white": $white,
+    "blue": $blue,
+    "dark-blue": $dark-blue,
+    "primary": $primary,
+    "dark": $dark,
+    "light": $light,
+    "violet": $violet,
+    "light-yellow": $light-yellow,
+    "secondary": $secondary,
+    "gray": $gray,
+    "light-gray": $light-gray,
+    "info": $info,
+  ),
+  $colors
+);

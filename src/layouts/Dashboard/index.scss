@@ -1,0 +1,11 @@
+.Dashboard {
+  > .sidebar-section {
+    z-index: 1;
+    height: calc(100vh - 2rem);
+  }
+  > main {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+  }
+}

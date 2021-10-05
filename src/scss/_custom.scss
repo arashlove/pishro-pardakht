@@ -5,13 +5,13 @@
 * {
   margin: 0;
   padding: 0;
-  word-spacing: 5px;
+  word-spacing: 3px;
   line-height: 150%;
   box-sizing: border-box;
 }
 html,
 body {
-  background-color: $white;
+  background-color: $light;
   color: $dark;
 }
 a {
@@ -80,4 +80,21 @@ h5,
 .h6,
 h6 {
   line-height: 150%;
+}
+.carousel {
+  .carousel-indicators {
+    gap: 0.5rem;
+    bottom: -40px;
+    li {
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border: 1px solid $secondary;
+      transition: 250ms;
+      @extend .rounded;
+      &.active {
+        background-color: $secondary;
+      }
+    }
+  }
 }

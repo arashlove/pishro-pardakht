@@ -8,8 +8,8 @@ import { clearCaches } from "./methods";
 
 export default function App() {
   const loading = useSelector((state) => state.loading.length > 0);
-  const landingPaths = ["/"];
-  const dashboardPaths = ["/dashboard"];
+  const landingPaths = ["/", "/login", "/contact-us"];
+  const dashboardPaths = ["/dashboard", "/dashboard/buy-crypto-currency"];
   useEffect(clearCaches, []);
   return (
     <React.Fragment>

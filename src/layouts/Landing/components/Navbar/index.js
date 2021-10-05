@@ -1,8 +1,8 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 import navItem from "../../_navItem";
 import { Dropdown } from "../../../../components";
 import "./index.scss";
-import React from "react";
 export default function Navbar() {
   const renderNavitems = () => {
     return navItem.map((item, index) => {

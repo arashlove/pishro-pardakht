@@ -9,7 +9,7 @@ export default function MiddleSection() {
         <h2 className='h2 text-light space-pre-wrap fw-bold text-center'>
           <Text value="landing.home.middle-section.title" />
         </h2>
-        <img src={cardsImg} alt="cardsImg" />
+        <img className='mw-100' width='400' src={cardsImg} alt="cardsImg" />
       </Container>
     </div>
   );

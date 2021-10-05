@@ -8,7 +8,8 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux";
 import { i18n } from "./boot";
-import "./sass/index.scss";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./scss/index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
