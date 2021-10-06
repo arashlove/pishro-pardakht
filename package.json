@@ -4,12 +4,14 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.4.15",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "bootstrap": "^5.1.1",
     "bootstrap-icons": "^1.5.0",
+    "graphql": "^15.6.0",
     "i18next": "^21.1.1",
     "moment-jalaali": "^0.9.2",
     "node-sass": "^6.0.1",
@@ -37,7 +39,7 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3003 react-scripts start",
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

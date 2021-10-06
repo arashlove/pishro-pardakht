@@ -9,6 +9,7 @@ import Layout from "./Layout";
 import Direction from "./Direction";
 import SearchBox from "./SearchBox";
 import Table from "./Table";
+import Notifications from "./Notifications";
 export {
   Loading,
   Dropdown,
@@ -21,4 +22,5 @@ export {
   Direction,
   SearchBox,
   Table,
+  Notifications,
 };

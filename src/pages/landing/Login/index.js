@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { DownloadSection } from "../../../components";
 import bgColorImage from "../../../assets/images/login/bg login.png";
+import bgExchangeImage from "../../../assets/images/login/people-exchanging-money.svg";
 import twoCamaGoldIcon from "../../../assets/icons/two-cama-gold.svg";
 import checkIcon from "../../../assets/icons/circle check green.svg";
 import LoginForm from "./LoginForm";
@@ -16,6 +17,11 @@ export default function Login() {
           className="w-100 h-100 object-fit-cover position-absolute"
           src={bgColorImage}
           alt="bgColorImage"
+        />
+        <img
+          className="w-100 h-100 object-fit-cover position-absolute opacity-3"
+          src={bgExchangeImage}
+          alt="bgExchangeImage"
         />
         <Container className="position-relative">
           <Row className="justify-content-between">

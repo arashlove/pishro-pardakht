@@ -2,6 +2,8 @@
   > .sidebar-section {
     z-index: 1;
     height: calc(100vh - 2rem);
+    position: sticky;
+    top: 1rem;
   }
   > main {
     flex: 1;

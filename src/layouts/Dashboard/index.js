@@ -5,8 +5,8 @@ import { BuyCryptoCurrency } from "../../pages/dashboard";
 import "./index.scss";
 export default function Dashboard() {
   return (
-    <Container className="Dashboard d-flex py-3 gap-5">
-      <div className="sidebar-section position-relative w-0 w-lg-auto overflow-visible">
+    <Container className="Dashboard d-flex py-3 gap-0 gap-lg-5">
+      <div className="sidebar-section w-0 w-lg-auto overflow-visible">
         <Sidebar />
       </div>
       <main>

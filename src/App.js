@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Route, Switch } from "react-router";
-import { Loading } from "./components";
+import { Loading, Notifications } from "./components";
 import { Dashboard, Landing } from "./layouts";
 import { Error404 } from "./pages/Error";
 import { clearCaches } from "./methods";
@@ -14,6 +14,7 @@ export default function App() {
   return (
     <React.Fragment>
       {loading && <Loading />}
+      <Notifications />
       <Switch>
         <Route path={landingPaths} component={Landing} exact />
         <Route path={dashboardPaths} component={Dashboard} exact />

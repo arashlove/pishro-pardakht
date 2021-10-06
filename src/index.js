@@ -7,19 +7,22 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux";
-import { i18n } from "./boot";
+import { i18n, clientGraphQL } from "./boot";
+import { ApolloProvider } from "@apollo/client";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./scss/index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <I18nextProvider i18n={i18n}>
-      <Provider store={store}>
-        <HashRouter>
-          <App />
-        </HashRouter>
-      </Provider>
-    </I18nextProvider>
+    <ApolloProvider client={clientGraphQL}>
+      <I18nextProvider i18n={i18n}>
+        <Provider store={store}>
+          <HashRouter>
+            <App />
+          </HashRouter>
+        </Provider>
+      </I18nextProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

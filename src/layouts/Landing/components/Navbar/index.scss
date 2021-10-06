@@ -3,6 +3,7 @@
   a {
     color: inherit;
     box-shadow: none !important;
+    white-space: inherit;
     &::after {
       content: "";
       position: absolute;

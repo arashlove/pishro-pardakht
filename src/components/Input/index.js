@@ -1,15 +1,16 @@
-// import { useState } from "react";
 import { Text } from "..";
 import "./index.scss";
 export default function Input({
   label = "",
-  key = "",
+  type = "text",
+  // state = "",
   value = null,
   onInput = () => {},
   //   rules = [],
 }) {
-  const showValue = value ?? "";
+  // const nulls = [undefined, null];
   //   const [message, setMessage] = useState(null);
+  const showValue = value ?? "";
   const handleChange = ({ target }) => {
     onInput(String(target.value));
   };
@@ -23,7 +24,8 @@ export default function Input({
         style={{ "--bs-gutter-x": "0" }}
       >
         <input
-          name={key}
+          // name={state}
+          type={type}
           value={showValue}
           onInput={handleChange}
           //   rules={rules}

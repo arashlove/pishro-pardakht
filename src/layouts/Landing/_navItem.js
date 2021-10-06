@@ -1,26 +1,26 @@
 const navItem = [
   {
-    label: "صفحه اصلی",
+    label: "landing.components.header.nav.0.label",
     to: "/",
   },
   {
-    label: "کارت‌های اعتباری",
+    label: "landing.components.header.nav.1.label",
     items: [],
   },
   {
-    label: "خدمات ما",
+    label: "landing.components.header.nav.2.label",
     items: [],
   },
   {
-    label: "پرداخت بین المللی",
+    label: "landing.components.header.nav.3.label",
     items: [],
   },
   {
-    label: "بلاگ",
+    label: "landing.components.header.nav.4.label",
     to: "/blog",
   },
   {
-    label: "تماس با ما",
+    label: "landing.components.header.nav.5.label",
     to: "/contact-us",
   },
 ];
